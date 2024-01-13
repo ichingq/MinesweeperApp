@@ -1,0 +1,15 @@
+<!-- Minesweeperapp/views/layouts/application.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> MinesweeperApp </title>
+  <%= stylesheet_link_tag 'application', 'custom' %>
+</head>
+<body>
+  <nav>
+    <%= link_to "Home", minesweeper_boards_path, class: "home-link" %>
+  </nav>
+  <%= yield %>
+</body>
+</html>

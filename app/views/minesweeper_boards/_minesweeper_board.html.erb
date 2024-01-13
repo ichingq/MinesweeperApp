@@ -1,0 +1,6 @@
+<!-- app/views/minesweeper_boards/_minesweeper_board.html.erb -->
+
+<li>
+  <%= link_to "#{minesweeper_board.board_name} (#{minesweeper_board.email})", minesweeper_board_path(minesweeper_board) %>
+  - <%= minesweeper_board.created_at.strftime('%B %e, %Y %l:%M %p') %>
+</li>

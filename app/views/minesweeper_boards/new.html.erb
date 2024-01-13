@@ -1,0 +1,50 @@
+<!-- MinesweeperApp/views/minesweeper_boards/new.html.erb -->
+
+<h1>Create a new Minesweeper Board</h1>
+
+<%= form_with(model: @minesweeper_board, url: minesweeper_boards_path, method: :post) do |form| %>
+  <% if @minesweeper_board.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@minesweeper_board.errors.count, "error") %> prohibited this board from being saved:</h2>
+      <ul>
+        <% @minesweeper_board.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+    <%= display_error(@minesweeper_board, :email) %>
+  </div>
+
+  <div>
+    <%= form.label :board_width %>
+    <%= form.number_field :board_width %>
+    <%= display_error(@minesweeper_board, :board_width) %>
+  </div>
+
+  <div>
+    <%= form.label :board_height %>
+    <%= form.number_field :board_height %>
+    <%= display_error(@minesweeper_board, :board_height) %>
+  </div>
+
+  <div>
+    <%= form.label :num_mines %>
+    <%= form.number_field :num_mines %>
+    <%= display_error(@minesweeper_board, :num_mines) %>
+  </div>
+
+  <div>
+    <%= form.label :board_name %>
+    <%= form.text_field :board_name %>
+    <%= display_error(@minesweeper_board, :board_name) %>
+  </div>
+
+  <div>
+    <%= form.submit "Generate Board" %>
+  </div>
+<% end %>

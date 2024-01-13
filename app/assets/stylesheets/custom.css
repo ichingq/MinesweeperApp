@@ -1,0 +1,34 @@
+/* MinesweeperApp/assets/stylesheets/custom.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light Blue */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #0099cc; /* Darker Blue */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #ddd; /* Light Gray */
+  padding: 10px;
+}
+
+a {
+  color: #0099cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add more styles as needed */

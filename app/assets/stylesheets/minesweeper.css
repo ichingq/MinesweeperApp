@@ -1,0 +1,46 @@
+/* app/assets/stylesheets/minesweeper.css */
+
+.minesweeper-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 30px);
+  gap: 2px;
+  margin: auto;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.mine {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.empty:hover {
+  background-color: #e0e0e0;
+}
+
+.board-container {
+  display: inline-block;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.board-row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.board-cell {
+  float: left;
+}

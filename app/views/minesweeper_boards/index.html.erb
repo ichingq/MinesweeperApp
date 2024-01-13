@@ -1,0 +1,12 @@
+<!-- app/views/minesweeper_boards/index.html.erb -->
+
+<h1>Ten Most Recently Generated Minesweeper Boards</h1>
+
+<%= link_to "Create new board", new_minesweeper_board_path %>
+
+<ul>
+  <%= render @recent_boards %>
+</ul>
+
+<%= link_to "View All Generated Boards", all_generated_boards_minesweeper_boards_path %>
+
