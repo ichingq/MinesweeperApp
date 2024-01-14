@@ -11,12 +11,16 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_01_13_195230) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "minesweeper_boards", force: :cascade do |t|
     t.string "email"
     t.integer "board_width"
     t.integer "board_height"
     t.integer "num_mines"
     t.string "board_name"
+    t.text "mines"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "board", default: "--- []\n"
