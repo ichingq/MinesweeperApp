@@ -1,4 +1,4 @@
-<!-- MinesweeperApp/views/minesweeper_boards/new.html.erb -->
+<!-- app/views/minesweeper_boards/new.html.erb -->
 
 <h1>Create a new Minesweeper Board</h1>
 
@@ -20,17 +20,17 @@
   </div>
 
   <div>
-    <%= form.label :board_width %>
+    <%= form.label :board_width, "Board height" %>
     <%= form.number_field :board_width %>
   </div>
 
   <div>
-    <%= form.label :board_height %>
+    <%= form.label :board_height, "Board width" %>
     <%= form.number_field :board_height %>
   </div>
 
   <div>
-    <%= form.label :num_mines %>
+    <%= form.label :num_mines, "Number of mines" %>
     <%= form.number_field :num_mines %>
   </div>
 

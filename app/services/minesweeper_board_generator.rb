@@ -1,4 +1,4 @@
-#MinesweeperApp/app/services/minesweeper_board_generator.rb
+#/app/services/minesweeper_board_generator.rb
 
 class MinesweeperBoardGenerator
   # Initialize the Minesweeper board generator with width, height, and number of mines

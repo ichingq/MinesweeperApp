@@ -1,8 +1,0 @@
-<!-- MinesweeperApp/views/minesweeper_boards/all_boards.html.erb -->
-
-<h1>All Generated Minesweeper Boards</h1>
-<ul>
-  <% @all_boards.each do |board| %>
-    <li><%= link_to board.board_name, minesweeper_board_path(board) %></li>
-  <% end %>
-</ul>
